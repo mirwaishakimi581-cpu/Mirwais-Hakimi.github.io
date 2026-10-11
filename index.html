@@ -1,99 +1,111 @@
-
 <!DOCTYPE html>
 <html lang="ps" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>زما شخصي ویب‌سایټ</title>
-
-  <style>
-    body {
-      font-family: Tahoma, Arial, sans-serif;
-      direction: rtl;
-      text-align: right;
-      background: #f1f5f9;
-      color: #1e293b;
-      margin: 0;
-      line-height: 1.9;
-    }
-
-    header {
-      background: #10233f;
-      color: white;
-      text-align: center;
-      padding: 35px 15px;
-    }
-
-    header h1 {
-      color: #6ee7b7;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 25px auto;
-      padding: 0 15px;
-    }
-
-    section {
-      background: white;
-      padding: 22px;
-      margin-bottom: 18px;
-      border-radius: 12px;
-    }
-
-    h2 {
-      color: #087f70;
-    }
-
-    a {
-      color: #087f70;
-    }
-
-    footer {
-      background: #10233f;
-      color: white;
-      text-align: center;
-      padding: 18px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mirwais Hakimi - IT, networking, cybersecurity and web development portfolio.">
+<title>Mirwais Hakimi | شخصي مسلکي وېب‌سایټ</title>
+<style>
+:root{--navy:#10233f;--teal:#0b806f;--mint:#8ff0ce;--ink:#1c2b3a;--muted:#5e6b78;--paper:#f3f6fa;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.9}
+a{color:inherit}
+.hero{background:linear-gradient(135deg,#10233f,#174b5b);color:#fff;padding:54px 20px 42px;text-align:center}
+.hero .eyebrow{color:var(--mint);font-size:.95rem}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);margin:8px 0}
+.hero p{max-width:760px;margin:8px auto 22px;color:#e7eff5}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:9px;text-decoration:none;font-weight:bold;background:var(--mint);color:#10233f}
+.btn.secondary{background:transparent;color:white;border:1px solid #b9d5df}
+nav{background:#0b1b30;display:flex;justify-content:center;gap:8px 20px;flex-wrap:wrap;padding:13px 12px;position:sticky;top:0;z-index:5}
+nav a{color:white;text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--mint)}
+main{width:min(100% - 30px,1000px);margin:26px auto}
+section{background:var(--white);border-radius:16px;padding:clamp(20px,4vw,32px);margin:20px 0;box-shadow:0 8px 28px #10233f0b}
+h2{margin:0 0 15px;color:var(--teal);font-size:1.5rem}
+.lead{font-size:1.08rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{border:1px solid #e1e8ef;border-radius:12px;padding:16px;background:#fbfdff}
+.card h3{margin:0 0 6px;font-size:1.05rem;color:var(--navy)}
+.meta{color:var(--muted);font-size:.92rem}
+.pills{display:flex;flex-wrap:wrap;gap:9px}
+.pill{background:#e6f6f1;color:#075e52;border-radius:999px;padding:5px 12px;font-size:.92rem}
+ul{padding-right:22px}
+.contact a{color:var(--teal);overflow-wrap:anywhere}
+footer{text-align:center;padding:24px;background:var(--navy);color:#dce8ef;margin-top:30px}
+.small{font-size:.88rem;color:var(--muted)}
+@media(max-width:520px){nav{position:static}.hero{padding-top:38px}}
+</style>
 </head>
-
 <body>
-  <header>
-    <h1>خپل بشپړ نوم دلته ولیکه</h1>
-    <p>زما شخصي او مسلکي ویب‌سایټ</p>
-  </header>
-
-  <main>
-    <section>
-      <h2>زما په اړه</h2>
-      <p>دلته د خپل ځان په اړه معلومات ولیکه.</p>
-    </section>
-
-    <section>
-      <h2>زده‌کړې</h2>
-      <p>د خپل ښوونځي، پوهنتون یا کورس معلومات ولیکه.</p>
-    </section>
-
-    <section>
-      <h2>کاري تجربه</h2>
-      <p>خپله کاري تجربه او دندو معلومات ولیکه.</p>
-    </section>
-
-    <section>
-      <h2>مهارتونه</h2>
-      <p>خپل کمپیوټري او نور مسلکي مهارتونه ولیکه.</p>
-    </section>
-
-    <section>
-      <h2>اړیکه</h2>
-      <p>خپل مسلکي ایمېل دلته ولیکه.</p>
-    </section>
-  </main>
-  
-
-  <footer>
-    <p>© 2026 زما شخصي ویب‌سایټ</p>
-  </footer>
+<header class="hero">
+  <div class="eyebrow">شخصي مسلکي پورټفولیو | PROFESSIONAL PORTFOLIO</div>
+  <h1>میرویس حکیمي</h1>
+  <p class="lead">د IT او شبکو زده‌کوونکی | Networking · CCTV · Cybersecurity · Web Development</p>
+  <p>زما موخه دا ده چې خپل تخنیکي مهارتونه د یوې مسلکي ادارې په پرمختګ او د ستونزو په حل کې وکاروم.</p>
+  <div class="actions">
+    <a class="btn" href="#contact">اړیکه ونیسئ</a>
+    <a class="btn secondary" href="#skills">زما مهارتونه</a>
+  </div>
+</header>
+<nav aria-label="اصلي مینو">
+  <a href="#about">زما په اړه</a><a href="#education">زده‌کړې</a><a href="#experience">تجربه</a><a href="#skills">مهارتونه</a><a href="#languages">ژبې</a><a href="#contact">اړیکه</a>
+</nav>
+<main>
+<section id="about">
+  <h2>زما په اړه</h2>
+  <p>زه میرویس حکیمي یم، د افغانستان د غزني ولایت د قره‌باغ اوسېدونکی. د معلوماتي ټکنالوژۍ، کمپیوټري شبکو، امنیتي کامرو، سایبري امنیت او ویب‌ډېوېلپمنټ په برخو کې زده‌کړه او عملي تجربه لرم. د شبکو د وسایلو تنظیم، د ستونزو موندل او حل، او له ټیم سره همکاري زما د علاقې مهمې برخې دي.</p>
+  <p>زما مسلکي موخه دا ده چې په داسې اداره کې کار وکړم چې د زده‌کړې، مهارتونو د کارولو او مسلکي پرمختګ فرصتونه ولري.</p>
+</section>
+<section id="education">
+  <h2>زده‌کړې او سندونه</h2>
+  <div class="grid">
+    <article class="card"><h3>کندهار پوهنتون</h3><p>د پوهنې پوهنځی — د کمپیوټر زده‌کړې</p><p class="meta">۲۰۲۳ – ۲۰۲۶</p></article>
+    <article class="card"><h3>شهید عبدالسلام عالي لېسه</h3><p>د عالي لېسې ډیپلوم</p><p class="meta">۲۰۱۰ – ۲۰۲۲ · قره‌باغ، غزني</p></article>
+    <article class="card"><h3>د انګلیسي ژبې سند</h3><p>Top Notch — کندهار پوهنتون</p><p class="meta">۲۰۲۴ – ۲۰۲۵</p></article>
+  </div>
+</section>
+<section id="experience">
+  <h2>کاري تجربه او عملي فعالیتونه</h2>
+  <div class="grid">
+    <article class="card"><h3>د AWCC خرڅلاو انټرنشیپ</h3><p>د افغان وایرلس مخابراتي شرکت (AWCC) سره د خرڅلاو انټرنشیپ بشپړ شوی.</p><p class="meta">۲۵ دسمبر ۲۰۲۵ – ۲۵ مارچ ۲۰۲۶</p></article>
+    <article class="card"><h3>د کندهار پوهنتون د IT څانګه</h3><p>د CCTV او IP کامرو نصب او تنظیم؛ د پوهنتون په پوهنځیو کې د تخنیکي کارونو تجربه.</p></article>
+    <article class="card"><h3>کمپیوټر او چاپ</h3><p>د اسنادو، کتابونو او ازموینې پاڼو چاپ، د چاپګرونو کارول، او د کمپیوټر او شبکې د ستونزو حل.</p></article>
+    <article class="card"><h3>د شبکو تخنیکي کارونه</h3><p>د روټرونو، سویچونو، Point-to-Point وسایلو او شبکوي تجهیزاتو تنظیم او عیب‌موندنه.</p></article>
+  </div>
+</section>
+<section id="skills">
+  <h2>تخنیکي مهارتونه</h2>
+  <div class="grid">
+    <article class="card"><h3>کمپیوټر او دفتر</h3><div class="pills"><span class="pill">Windows 7/8/10/11</span><span class="pill">Microsoft Word</span><span class="pill">Microsoft Excel</span><span class="pill">PowerPoint</span></div></article>
+    <article class="card"><h3>شبکې او امنیت</h3><div class="pills"><span class="pill">Networking</span><span class="pill">CCNA زده‌کړه</span><span class="pill">TCP/IP</span><span class="pill">HTTPS</span><span class="pill">Firewall Configuration</span><span class="pill">Cybersecurity</span></div></article>
+    <article class="card"><h3>ویب او ډیزاین</h3><div class="pills"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Adobe Photoshop</span></div></article>
+    <article class="card"><h3>تخنیکي ملاتړ</h3><div class="pills"><span class="pill">CCTV / IP Cameras</span><span class="pill">Router & Switch Setup</span><span class="pill">Network Troubleshooting</span><span class="pill">Printer Support</span></div></article>
+  </div>
+</section>
+<section>
+  <h2>شخصي او مسلکي وړتیاوې</h2>
+  <div class="pills"><span class="pill">سخت کار</span><span class="pill">د ستونزو حل</span><span class="pill">تخلیقي فکر</span><span class="pill">ټیم‌ورک</span><span class="pill">اغېزمنه اړیکه</span><span class="pill">د وخت مدیریت</span><span class="pill">تخنیکي عیب‌موندنه</span></div>
+</section>
+<section id="languages">
+  <h2>ژبې</h2>
+  <div class="grid">
+    <article class="card"><h3>پښتو</h3><p>لوستل: عالي · لیکل: عالي · خبرې: عالي</p></article>
+    <article class="card"><h3>دري</h3><p>لوستل: عالي · لیکل: عالي · خبرې: ښه</p></article>
+    <article class="card"><h3>انګلیسي</h3><p>لوستل: عالي · لیکل: عالي · خبرې: ښه</p></article>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <h2>د اړیکې معلومات</h2>
+  <p><strong>ایمېل:</strong> <a href="mailto:mirwaish581@gmail.com">mirwaish581@gmail.com</a></p>
+  <p><strong>ټیلیفون / WhatsApp:</strong> <a href="tel:+93776477955">+93 776 477 955</a></p>
+  <p><strong>دویم ټیلیفون:</strong> <a href="tel:+93706720067">+93 706 720 067</a></p>
+  <p><strong>Facebook:</strong> Mirwais Hakimi</p>
+  <p><strong>ځای:</strong> قره‌باغ، غزني، افغانستان</p>
+  <p class="small">مراجع او د تصدیق لپاره اړیکې د اړتیا پر مهال د CV له لارې وړاندې کېدای شي.</p>
+</section>
+</main>
+<footer>© 2026 میرویس حکیمي · شخصي مسلکي وېب‌سایټ</footer>
 </body>
 </html>
